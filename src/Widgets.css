@@ -1,3 +1,40 @@
-.widget {
-    flex: 0.3;
+.widgets {
+    flex: 1;
+}
+
+.widgets__input {
+    background-color: var(--twitter-background);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 10px;
+    border-radius: 30px;
+}
+
+.widgets__input>input {
+    background-color: var(--twitter-background);
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+.widgets__container {
+    background-color: var(--twitter-background);
+    margin: 5px 10px;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+
+.widgets__container>h2 {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.widgets__moreButton {
+    display: flex;
+}
+
+.widgets__moreButton>div {
+    margin: 5px;
 }

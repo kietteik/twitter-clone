@@ -5,14 +5,14 @@ import {
     TwitterTimelineEmbed,
     TwitterShareButton,
     TwitterFollowButton,
-    TwitterHashtagButton,
-    TwitterMentionButton,
+    // TwitterHashtagButton,
+    // TwitterMentionButton,
     TwitterTweetEmbed,
 } from "react-twitter-embed";
 
 function Widgets() {
     return (
-        <div className="widget">
+        <div className="widgets">
             <div className="widgets__input">
                 <SearchIcon className="widgets__searchIcon" />
                 <input
@@ -22,21 +22,23 @@ function Widgets() {
                 />
             </div>
             <div className="widgets__container">
-                <h2>Widgets</h2>
+                <h2>What's happening</h2>
                 <TwitterTweetEmbed tweetId={"933354946111705097"} />
                 <TwitterTimelineEmbed
                     sourceType="profile"
                     screenName="kietteik"
                     options={{ height: 400 }}
                 />
-                <TwitterShareButton
-                    url={"https://facebook.com/kietteik"}
-                    options={{
-                        text: "#reactjs is awesome",
-                        via: "kietteik",
-                    }}
-                />
-                <TwitterFollowButton screenName={"kietteik"} />
+                <div className="widgets__moreButton">
+                    <TwitterShareButton
+                        url={"https://facebook.com/kietteik"}
+                        options={{
+                            text: "#reactjs is awesome",
+                            via: "kietteik",
+                        }}
+                    />
+                    <TwitterFollowButton screenName={"kietteik"} />
+                </div>
             </div>
         </div>
     );

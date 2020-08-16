@@ -1,7 +1,9 @@
 .feed {
-    flex: 0.6;
+    flex: 2;
     border-right: 1px solid var(--twitter-background);
     overflow-y: scroll;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 /* hide scrollbar for CHROME, SAFARI, OPERA */
